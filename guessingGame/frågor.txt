@@ -1,0 +1,36 @@
+När använder man add respektive commit?
+git add - Används för att lägga till förändringar i arbetskatalogen till staging-området. Det innebär att du förbereder filerna för
+att inkluderas i nästa commit.
+
+git commit - Används för att skapa en commit, vilket är en snapshot av de ändringar som finns i staging-området. Varje commit har en 
+unik identifierare och en commit-meddelande som beskriver ändringarna.
+
+
+Vad är pull repektive push?
+git pull - Används för att hämta (pulla) ändringar från ett fjärrrepository och slå samman dem med det lokala arbetet.
+
+git push - Används för att skicka lokala commits till ett fjärrrepository. Det uppdaterar fjärrrepositoryt med de ändringar som har 
+gjorts lokalt.
+
+
+När använder man log respektive status?
+git log - Visar en historik över commits. Det visar information som commit-ID, författare, datum och commit-meddelande.
+
+git status - Visar statusen för ditt arbetskatalog och staging-område. Det informerar om vilka filer som har ändrats, vilka som är 
+redo att committas och om det finns andra relevanta förändringar.
+
+
+Vad är en Git branch och varför är de viktiga?
+branch i Git är en oberoende linje av utveckling. Du kan tänka på det som en separat gren av ditt projekt där du kan 
+experimentera med nya funktioner eller göra förändringar utan att påverka huvudgrenen.
+
+
+
+Jag vill ha VG på denna uppgift.
+
+Sätt att rulla tillbaka koden till ett tidigare tillstånd:
+git revert - Skapar en ny commit som ångrar de ändringar som gjordes i en tidigare commit.
+
+git reset - Ångrar commits och flyttar HEAD och aktuell gren till en tidigare commit.
+
+git checkout - Flyttar HEAD till en tidigare commit utan att ändra historiken eller ta bort commits.
