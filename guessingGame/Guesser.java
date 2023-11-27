@@ -59,7 +59,18 @@ public Guesser(int low, int high) {
    * the player.
    */
   private String getReply(){
-    String reply = null;
+    String reply;
+    Scanner scanner = new Scanner(System.in);
+
+    do {
+      System.out.print("Please answer T for true, and F for false: ");
+      reply = scanner.nextLine();
+
+      if (!reply.equals("T") && !reply.equals("F")) {
+        System.out.println("Invalid input. Please enter T or F.");
+      }
+    } while (!reply.equals("T") && !reply.equals("F"));
+
     // Write code here which reads a String from the console.
     // As long as it is not a valid reply (one of "T" and "F")
     // write an error message, and read a new reply.
