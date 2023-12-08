@@ -7,6 +7,6 @@ echo "Compiling..."
 javac *.java
 echo "Running game..."
 java GuessingGame
-ecgo "Done!"
+echo "Done!"
 rm *.class
 ls
